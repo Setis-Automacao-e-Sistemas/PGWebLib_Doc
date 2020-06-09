@@ -101,7 +101,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">TransactionListener</span></pre>
-<div class="block">Listener a ser implementado pela automaÁ„o comercial durante a execuÁ„o de uma transaÁ„o <a href="../../../../../br/com/setis/pgweblib/PGWebLib.html#executeTransaction-br.com.setis.pgweblib.entidades.TransactionListener-"><code>PGWebLib.executeTransaction(TransactionListener)</code></a>.</div>
+<div class="block">Listener a ser implementado pela automa√ß√£o comercial durante a execu√ß√£o de uma transa√ß√£o <a href="../../../../../br/com/setis/pgweblib/PGWebLib.html#executeTransaction-br.com.setis.pgweblib.entidades.TransactionListener-"><code>PGWebLib.executeTransaction(TransactionListener)</code></a>.</div>
 </li>
 </ul>
 </div>
@@ -123,17 +123,17 @@ var activeTableTab = "activeTableTab";
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../br/com/setis/pgweblib/entidades/TransactionListener.html#onMoreData-br.com.setis.pgweblib.entidades.GetData:A-">onMoreData</a></span>(<a href="../../../../../br/com/setis/pgweblib/entidades/GetData.html" title="class in br.com.setis.pgweblib.entidades">GetData</a>[]&nbsp;getDataParams)</code>
-<div class="block">Caso durante a excecuÁ„o de uma transaÁ„o, algum dado adicional precise ser informado, este
- callback ser· chamado com os par‚metros da captura a serem efetuados, conforme a
- especificaÁ„o da PGWebLib.</div>
+<div class="block">Caso durante a excecu√ß√£o de uma transa√ß√£o, algum dado adicional precise ser informado, este
+ callback ser√° chamado com os par√¢metros da captura a serem efetuados, conforme a
+ especifica√ß√£o da PGWebLib.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../br/com/setis/pgweblib/entidades/PinpadListener.html" title="interface in br.com.setis.pgweblib.entidades">PinpadListener</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../br/com/setis/pgweblib/entidades/TransactionListener.html#onPinpadCommand-int-boolean-">onPinpadCommand</a></span>(int&nbsp;commandId,
                boolean&nbsp;allowTyping)</code>
-<div class="block">Caso seja necess·ria uma captura no PIN-Pad durante uma transaÁ„o, este callback ser·
- invocado para que a automaÁ„o comercial registre um listener para ser notificada do estado
+<div class="block">Caso seja necess√°ria uma captura no PIN-Pad durante uma transa√ß√£o, este callback ser√°
+ invocado para que a automa√ß√£o comercial registre um listener para ser notificada do estado
  da
  captura.</div>
 </td>
@@ -141,7 +141,7 @@ var activeTableTab = "activeTableTab";
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../br/com/setis/pgweblib/entidades/TransactionListener.html#onTransactionFinished-int-">onTransactionFinished</a></span>(int&nbsp;returnCode)</code>
-<div class="block">Callback invocado quando a transaÁ„o for finalizada, seja bem-sucedida ou n„o.</div>
+<div class="block">Callback invocado quando a transa√ß√£o for finalizada, seja bem-sucedida ou n√£o.</div>
 </td>
 </tr>
 </table>
@@ -166,16 +166,16 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>onMoreData</h4>
 <pre>boolean&nbsp;onMoreData(<a href="../../../../../br/com/setis/pgweblib/entidades/GetData.html" title="class in br.com.setis.pgweblib.entidades">GetData</a>[]&nbsp;getDataParams)</pre>
-<div class="block">Caso durante a excecuÁ„o de uma transaÁ„o, algum dado adicional precise ser informado, este
- callback ser· chamado com os par‚metros da captura a serem efetuados, conforme a
- especificaÁ„o da PGWebLib.</div>
+<div class="block">Caso durante a excecu√ß√£o de uma transa√ß√£o, algum dado adicional precise ser informado, este
+ callback ser√° chamado com os par√¢metros da captura a serem efetuados, conforme a
+ especifica√ß√£o da PGWebLib.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>getDataParams</code> - Lista de estruturas <a href="../../../../../br/com/setis/pgweblib/entidades/GetData.html" title="class in br.com.setis.pgweblib.entidades"><code>GetData</code></a>, contendo os par‚metros a serem
+<dd><code>getDataParams</code> - Lista de estruturas <a href="../../../../../br/com/setis/pgweblib/entidades/GetData.html" title="class in br.com.setis.pgweblib.entidades"><code>GetData</code></a>, contendo os par√¢metros a serem
                       capturados.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Se <code>true</code>, indica que a captura foi feita com sucesso. Caso <code>false</code>, a
-         captura n„o foi realizada (tipicamente cancelada pelo operador). A transaÁ„o n„o deve
+         captura n√£o foi realizada (tipicamente cancelada pelo operador). A transa√ß√£o n√£o deve
          prosseguir.</dd>
 </dl>
 </li>
@@ -188,20 +188,20 @@ var activeTableTab = "activeTableTab";
 <h4>onPinpadCommand</h4>
 <pre><a href="../../../../../br/com/setis/pgweblib/entidades/PinpadListener.html" title="interface in br.com.setis.pgweblib.entidades">PinpadListener</a>&nbsp;onPinpadCommand(int&nbsp;commandId,
                                boolean&nbsp;allowTyping)</pre>
-<div class="block">Caso seja necess·ria uma captura no PIN-Pad durante uma transaÁ„o, este callback ser·
- invocado para que a automaÁ„o comercial registre um listener para ser notificada do estado
+<div class="block">Caso seja necess√°ria uma captura no PIN-Pad durante uma transa√ß√£o, este callback ser√°
+ invocado para que a automa√ß√£o comercial registre um listener para ser notificada do estado
  da
- captura.<br> Diferentemente da PGWebLib tradicional, a automaÁ„o n„o precisa identificar o
- comando e fazer sua execuÁ„o de acordo: tudo ocorrer· de maneira transparente, com todos os
- tratamentos necess·rios sendo realizados pela biblioteca.</div>
+ captura.<br> Diferentemente da PGWebLib tradicional, a automa√ß√£o n√£o precisa identificar o
+ comando e fazer sua execu√ß√£o de acordo: tudo ocorrer√° de maneira transparente, com todos os
+ tratamentos necess√°rios sendo realizados pela biblioteca.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>commandId</code> - ID do tipo de captura que est· sendo realizado no PIN-Pad (meramente
+<dd><code>commandId</code> - ID do tipo de captura que est√° sendo realizado no PIN-Pad (meramente
                   informativo).</dd>
-<dd><code>allowTyping</code> - Indica se È permitida a captura digitada do cart„o. Relevante somente se
+<dd><code>allowTyping</code> - Indica se √© permitida a captura digitada do cart√£o. Relevante somente se
                     commandId == PWDAT_CARDINF.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>ImplementaÁ„o de <a href="../../../../../br/com/setis/pgweblib/entidades/PinpadListener.html" title="interface in br.com.setis.pgweblib.entidades"><code>PinpadListener</code></a> efetuada pela automaÁ„o, para notificaÁ„o do
+<dd>Implementa√ß√£o de <a href="../../../../../br/com/setis/pgweblib/entidades/PinpadListener.html" title="interface in br.com.setis.pgweblib.entidades"><code>PinpadListener</code></a> efetuada pela automa√ß√£o, para notifica√ß√£o do
          dado.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../br/com/setis/pgweblib/entidades/GetData.html#tipoDeDado"><code>GetData.tipoDeDado</code></a></dd>
@@ -215,12 +215,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>onTransactionFinished</h4>
 <pre>void&nbsp;onTransactionFinished(int&nbsp;returnCode)</pre>
-<div class="block">Callback invocado quando a transaÁ„o for finalizada, seja bem-sucedida ou n„o.</div>
+<div class="block">Callback invocado quando a transa√ß√£o for finalizada, seja bem-sucedida ou n√£o.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>returnCode</code> - Erro de execuÁ„o (ver ì10. CÛdigos de retornoî, p·gina 75 - especificaÁ„o
+<dd><code>returnCode</code> - Erro de execu√ß√£o (ver ‚Äú10. C√≥digos de retorno‚Äù, p√°gina 75 - especifica√ß√£o
                    PGWebLib). Uma
-                   mensagem de erro pode ser obtida atravÈs da funÁ„o <a href="../../../../../br/com/setis/pgweblib/PGWebLib.html#getResult-java.lang.Short-"><code>PGWebLib.getResult(Short PWINFO_RESULTMSG)</code></a>.</dd>
+                   mensagem de erro pode ser obtida atrav√©s da fun√ß√£o <a href="../../../../../br/com/setis/pgweblib/PGWebLib.html#getResult-java.lang.Short-"><code>PGWebLib.getResult(Short PWINFO_RESULTMSG)</code></a>.</dd>
 </dl>
 </li>
 </ul>
